@@ -1,8 +1,26 @@
-http_ server
-
-
 npm init -y  
+# Initialize a new Node.js project with default settings (creates package.json)
 
 yarn add typescript ts-node -D
+# Install TypeScript and ts-node as dev dependencies for compiling and running TS files
 
 npx tsc --init
+# Generate a default tsconfig.json file to configure TypeScript compiler options
+
+yarn add express uuid
+# Install express framework and uuid library as production dependencies
+
+yarn add -D jest ts-jest @types/jest @types/node @types/express supertest @types/supertest
+# Install Jest testing framework, TypeScript support for Jest, type definitions, and Supertest for HTTP testing as dev dependencies
+
+npx ts-jest config:init
+# Initialize Jest config file (jest.config.js) with TypeScript preset
+
+npm start
+# Run the project start script (usually runs ts-node to start the server)
+
+npm test
+# Run all tests using Jest
+
+npm run test:e2e
+# Run end-to-end tests matching pattern (usually under e2e/ folder)
